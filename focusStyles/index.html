@@ -3,12 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Accessibility</title>
+    <style>
+      a:focus {
+        outline: 3px solid #000;
+
+      }
+    </style>
   </head>
 
   <body>
+    <ul class="skipLinks">
+      <li><a href="nav">Skip to navigation</a></li>
+      <li><a href="main">Skip to main</a></li>
+    </ul>
+
     <header role="banner">
       <strong>Accessible Website</strong>
-      <nav role="navigation">
+      <nav role="navigation" id="nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -17,7 +28,7 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main role="main" id="main">
       <h1>Accessibility</h1>
       <p>Websites should be usable and available to every human being</p>
       <img src="#" alt="Right now this image is empty">
