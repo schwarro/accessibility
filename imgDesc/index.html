@@ -3,9 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Accessibility</title>
+    <style>
+      .visually-hidden {
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        border: 0'
+        clip: rect(0 0 0 0);
+      }
+    </style>
   </head>
 
   <body>
-    <img src="#">
+    <img src="#" aria-details="imageInfo" alt="Here is a description of the image">
+    <dl id="imageInfo" class="visually-hidden">
+      <dt></dt>
+      <dd></dd>
+    </dl>
   </body>
 </html>
