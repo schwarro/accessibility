@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
     <meta charset="utf-8">
     <title>Accessibility</title>
   </head>
 
   <body>
-    <header>
+    <header role="banner">
       <strong>Accessible Website</strong>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -17,21 +17,22 @@
       </nav>
     </header>
 
-    <main>
+    <main role="main">
       <h1>Accessibility</h1>
       <p>Websites should be usable and available to every human being</p>
       <img src="#" alt="Right now this image is empty">
     </main>
 
-    <aside>
+    <aside role="complementary">
       <ul>
         <li><a href="#">A Link to nowhere</a></li>
         <li><a href="#">A Link to nowhere</a></li>
       </ul>
-
-      <footer>
-        <p>&copy; Accessibility Website</p>
-      </footer>
     </aside>
+
+    <footer role="contentinfo">
+      <p>&copy; Accessibility Website</p>
+    </footer>
+
   </body>
 </html>
