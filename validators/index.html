@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <title>Accessibility</title>
+    <style>
+      a:focus {
+        outline: 3px solid #000;
+      }
+      .skipLinks {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .skipLinks a {
+        position: absolute;
+        top: -3m;
+        background-color: #000;
+        color: #fff;
+        padding: 0.5 em 0.75 em;
+        font-weight: bold;
+      }
+      .skipLinks a:focus {
+        top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="skipLinks">
+      <li><a href="nav">Skip to navigation</a></li>
+      <li><a href="main">Skip to main</a></li>
+    </ul>
+
+    <header role="banner" id="#top">
+      <strong>Accessible Website</strong>
+      <nav role="navigation" id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main" id="main">
+      <h1>Accessibility</h1>
+      <p>Websites should be usable and available to every human being</p>
+      <img src="#" alt="Right now this image is empty">
+    </main>
+
+    <aside role="complementary">
+      <ul>
+        <li><a href="#">A Link to nowhere</a></li>
+        <li><a href="#">A Link to nowhere</a></li>
+      </ul>
+    </aside>
+
+    <footer role="contentinfo">
+      <p>&copy; Accessibility Website - <a href="#top">Back to top</a></p>
+    </footer>
+
+  </body>
+</html>
